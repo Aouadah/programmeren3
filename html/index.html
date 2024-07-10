@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript" src="../js/index.js" defer></script>
+    <script type="text/javascript" src="../js/ajax.js" defer></script>
+    <script type="text/javascript" src="../js/storage/storageAllStars.js" defer></script>
+    <script type="text/javascript" src="../js/storage/storageDKC.js" defer></script>
+    <script type="text/javascript" src="../js/storage/storageKirby.js" defer></script>
+    <script type="text/javascript" src="../js/storage/storageMarioWorld.js" defer></script>
+    <script type="text/javascript" src="../js/storage/storageMMX.js" defer></script>
+    <script type="text/javascript" src="../js/storage/storageMortalKombat.js" defer></script>
+    <script type="text/javascript" src="../js/storage/storagePlok.js" defer></script>
+    <script type="text/javascript" src="../js/storage/storageStarFox.js" defer></script>
+    <script type="text/javascript" src="../js/storage/storageSuperPunchOut.js" defer></script>
+    <script type="text/javascript" src="../js/storage/storageZelda.js" defer></script>
+    <title>Magazine</title>
+</head>
+<body>
+    <header>
+        <h1>SNES Magazine</h1>
+    </header>
+
+    <main>
+        <p class = "normal-text">
+            Dit is mijn magazine die ik moest maken voor programmeren 3. Ik had besloten om een magazine te maken over
+            SNES games. Ik dacht dat het een leuk idee was en dat zal deze magazine ook meer uniek maken vergeleken met
+            de magazines van andere studenten.
+        </p>
+
+        <div id = "game-container">
+            <div class="game-box" id="allstars-box">
+                <img alt = rotterdamMap id="allstars" src="../img/cover-allstars.png">
+                <p class="gamename">Super Mario All-Stars</p>
+                <form id="allstarsForm" method="post">
+                    <input type="submit" value="Meer informatie"/>
+                </form>
+                <form id="allstarsFav" method="post">
+                    <input type="submit" value="Voeg toe als favoriet"/>
+                </form>
+                <form id="allstarsUnfav" method="post">
+                    <input type="submit" value="Favoriet verwijderen"/>
+                </form>
+            </div>
+
+            <div class="game-box" id="marioworld-box">
+                <img alt = rotterdamMap id="marioworld" src="../img/cover-marioworld.jpg">
+                <p class="gamename">Super Mario World</p>
+                <form id="marioworldForm" method="post">
+                    <input type="submit" value="Meer informatie"/>
+                </form>
+                <form id="marioworldFav" method="post">
+                    <input type="submit" value="Voeg toe als favoriet"/>
+                </form>
+                <form id="marioworldUnfav" method="post">
+                    <input type="submit" value="Favoriet verwijderen"/>
+                </form>
+            </div>
+
+            <div class="game-box" id="mortalkombat-box">
+                <img alt = rotterdamMap id="mortalkombat" src="../img/cover-mortalkombat.jpg">
+                <p class="gamename">Mortal Kombat</p>
+                <form id="mortalkombatForm" method="post">
+                    <input type="submit" value="Meer informatie"/>
+                </form>
+                <form id="mortalkombatFav" method="post">
+                    <input type="submit" value="Voeg toe als favoriet"/>
+                </form>
+                <form id="mortalkombatUnfav" method="post">
+                    <input type="submit" value="Favoriet verwijderen"/>
+                </form>
+            </div>
+
+            <div class="game-box" id="dkc-box">
+                <img alt = rotterdamMap id="dkc" src="../img/cover-dkc.jpg">
+                <p class="gamename">Donkey Kong Country</p>
+                <form id="dkcForm" method="post">
+                    <input type="submit" value="Meer informatie"/>
+                </form>
+                <form id="dkcFav" method="post">
+                    <input type="submit" value="Voeg toe als favoriet"/>
+                </form>
+                <form id="dkcUnfav" method="post">
+                    <input type="submit" value="Favoriet verwijderen"/>
+                </form>
+            </div>
+
+            <div class="game-box" id="mmx-box">
+                <img alt = rotterdamMap id="mmx" src="../img/cover-mmx.png">
+                <p class="gamename">Mega Man X</p>
+                <form id="mmxForm" method="post">
+                    <input type="submit" value="Meer informatie"/>
+                </form>
+                <form id="mmxFav" method="post">
+                    <input type="submit" value="Voeg toe als favoriet"/>
+                </form>
+                <form id="mmxUnfav" method="post">
+                    <input type="submit" value="Favoriet verwijderen"/>
+                </form>
+            </div>
+
+            <div class="game-box" id="kirby-box">
+                <img alt = rotterdamMap id="kirby" src="../img/cover-kirbydreamland3.png">
+                <p class="gamename">Kirby's Dream Land 3</p>
+                <form id="kirbyForm" method="post">
+                    <input type="submit" value="Meer informatie"/>
+                </form>
+                <form id="kirbyFav" method="post">
+                    <input type="submit" value="Voeg toe als favoriet"/>
+                </form>
+                <form id="kirbyUnfav" method="post">
+                    <input type="submit" value="Favoriet verwijderen"/>
+                </form>
+            </div>
+
+            <div class="game-box" id="starfox-box">
+                <img alt = rotterdamMap id="starfox" src="../img/cover-starfox.jpg">
+                <p class="gamename">Star Fox</p>
+                <form id="starfoxForm" method="post">
+                    <input type="submit" value="Meer informatie"/>
+                </form>
+                <form id="starfoxFav" method="post">
+                    <input type="submit" value="Voeg toe als favoriet"/>
+                </form>
+                <form id="starfoxUnfav" method="post">
+                    <input type="submit" value="Favoriet verwijderen"/>
+                </form>
+            </div>
+
+            <div class="game-box" id="superpunchout-box">
+                <img alt = rotterdamMap id="superpunchout" src="../img/cover-superpunchout.jpg">
+                <p class="gamename">Super Punch-Out</p>
+                <form id="superpunchoutForm" method="post">
+                    <input type="submit" value="Meer informatie"/>
+                </form>
+                <form id="superpunchoutFav" method="post">
+                    <input type="submit" value="Voeg toe als favoriet"/>
+                </form>
+                <form id="superpunchoutUnfav" method="post">
+                    <input type="submit" value="Favoriet verwijderen"/>
+                </form>
+            </div>
+
+            <div class="game-box" id="zelda-box">
+                <img alt = rotterdamMap id="zelda" src="../img/cover-zelda.jpg">
+                <p class="gamename">LOZ: A Link to the Past</p>
+                <form id="zeldaForm" method="post">
+                    <input type="submit" value="Meer informatie"/>
+                </form>
+                <form id="zeldaFav" method="post">
+                    <input type="submit" value="Voeg toe als favoriet"/>
+                </form>
+                <form id="zeldaUnfav" method="post">
+                    <input type="submit" value="Favoriet verwijderen"/>
+                </form>
+            </div>
+
+            <div class="game-box" id="plok-box">
+                <img alt = rotterdamMap id="plok" src="../img/cover-plok.png">
+                <p class="gamename">Plok</p>
+                <form id="plokForm" method="post">
+                    <input type="submit" value="Meer informatie"/>
+                </form>
+                <form id="plokFav" method="post">
+                    <input type="submit" value="Voeg toe als favoriet"/>
+                </form>
+                <form id="plokUnfav" method="post">
+                    <input type="submit" value="Favoriet verwijderen"/>
+                </form>
+            </div>
+        </div>
+
+        <div id = "infoContainer">
+            <p class = "normal-text">Informatie:</p>
+            <ul id="info-box">
+
+            </ul>
+        </div>
+
+        <p class = "normal-text">
+            Om de arrays te zien van mijn webservice, kun je op de onderste knop klikken. Dit is mogelijk dankzij AJAX.
+        </p>
+        <button id="load-JSON">laden</button>
+        <div id = "ajaxContainer">
+            <ul id="ajax-box">
+
+            </ul>
+        </div>
+    </main>
+</body>
+</html>

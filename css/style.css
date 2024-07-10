@@ -1,0 +1,87 @@
+body
+{
+    background-color: #A7A4E0;
+    font-size: 1em;
+}
+
+.game-box
+{
+    background-color: #cec9cc;
+    width: 20vw;
+    height: 24vw;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#game-container
+{
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 95vw;
+    margin: auto;
+}
+
+img
+{
+    width: 20vw;
+    height: 13.5vw;
+}
+
+.button
+{
+    height: 50px;
+    margin: 5px;
+}
+
+.yellow
+{
+    background-color: yellow;
+}
+
+#infoContainer
+{
+    width: 80vw;
+    height: 200px;
+    border: 3px Solid #908a99;
+    margin: auto;
+    background-color: #cec9cc;
+}
+
+input
+{
+    width: 20vw;
+    height: 2vw;
+}
+
+li
+{
+    font-size: 1.5em;
+}
+
+.gamename
+{
+    text-align: center;
+    font-size: 1.1em;
+}
+
+header
+{
+    font-size: 3em;
+    text-align: center;
+    background-color: #4f43ae;
+    padding: 1px;
+}
+
+.normal-text
+{
+    font-size: 1.5em;
+}
+
+h2
+{
+    font-size: 2em;
+}
